@@ -1,7 +1,7 @@
 {
   "name": "aframe-echo-component",
-  "version": "0.0.1",
-  "description": "Event handling component for Aframe.",
+  "version": "0.0.2",
+  "description": "Events utility component for Aframe.",
   "main": "index.js",
   "scripts": {
     "build": "browserify examples/main.js -o examples/build.js",

@@ -9,13 +9,12 @@ Grab the [javascript files from the dist folder](https://github.com/markkorput/a
 
 #### npm
 
-Install dependency via npm (TODO! DOESN'T WORK YET)
+Install dependency via npm:
 ```
 npm install aframe-echo-component
 ```
 
 Register AFRAME component:
-
 ```javascript
 var AFRAME = require('aframe');
 var echoComp = require('aframe-echo-component').echo_component;
