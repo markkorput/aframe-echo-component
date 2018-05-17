@@ -8,10 +8,10 @@
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow
         echo__1="event: click; echo: step1; delay:250;"
         echo__2="event: click; echo: step2; delay:1000;"
-        echo__3="event: click; echo: step1; delay:250; subject: #theCylinder"
-        echo__4="event: click; echo: step2; delay:1250; subject: #theCylinder;"
-        echo__5="event: click; echo: step1; subject: #theSphere"
-        echo__6="event: click; echo: step2; delay:1300; subject: #theSphere">
+        echo__3="event: click; echo: step1; delay:250; to: #theCylinder"
+        echo__4="event: click; echo: step2; delay:1250; to: #theCylinder;"
+        echo__5="event: click; echo: step1; to: #theSphere"
+        echo__6="event: click; echo: step2; delay:1300; to: #theSphere">
         <a-animation begin="step1" attribute="position" from="-1 0.5 -3" to="1 0.5 -3" dur="1000"></a-animation>
         <a-animation begin="step2" attribute="position" from="1 0.5 -3" to="-1 0.5 -3" dur="1000"></a-animation>
       </a-box>

@@ -3,7 +3,7 @@ module.exports = { 'echo_component' : {
     event: { type: 'string' },
     echo: { type: 'string', default: null },
     delay: { type: 'number', default: 0 },
-    subject: { type: 'selector', default: null },
+    to: { type: 'selector', default: null },
   },
 
   multiple: true,
@@ -29,6 +29,6 @@ module.exports = { 'echo_component' : {
   },
 
   emit: function() {
-    (this.data.subject || this.el).emit(this.data.echo || this.data.event);
+    (this.data.to || this.el).emit(this.data.echo || this.data.event);
   }
 } };

@@ -43,7 +43,7 @@ This can be useful in combination with the sound component for tweaking the timi
 ### Usage - forward event to other object
 
 ```html
-<a-plane id="someButton" echo="event: click; echo: moveUp; subject: #theObject"></a-plane>
+<a-plane id="someButton" echo="event: click; echo: moveUp; to: #theObject"></a-plane>
 
 <a-sphere id="theObject">
   <a-animation begin="moveUp" attribute="position" from="0 0 0" to="0 0 1" dur="1000"></a-animation>
