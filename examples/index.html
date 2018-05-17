@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>A-Frame Layer Component - Basic</title>
+    <script src="../build.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow
+        echo__1="event: click; echo: step1; delay:250;"
+        echo__2="event: click; echo: step2; delay:1000;"
+        echo__3="event: click; echo: step1; delay:250; subject: #theCylinder"
+        echo__4="event: click; echo: step2; delay:1250; subject: #theCylinder;"
+        echo__5="event: click; echo: step1; subject: #theSphere"
+        echo__6="event: click; echo: step2; delay:1300; subject: #theSphere">
+        <a-animation begin="step1" attribute="position" from="-1 0.5 -3" to="1 0.5 -3" dur="1000"></a-animation>
+        <a-animation begin="step2" attribute="position" from="1 0.5 -3" to="-1 0.5 -3" dur="1000"></a-animation>
+      </a-box>
+
+      <a-cylinder id="theCylinder" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow>
+        <a-animation begin="step1" attribute="position" from="1 0.75 -3" to="1 0.75 -6" dur="1000"></a-animation>
+        <a-animation begin="step2" attribute="position" from="1 0.75 -6" to="1 0.75 -3" dur="1000"></a-animation>
+      </a-cylinder>
+
+      <a-sphere id="theSphere" position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow>
+        <a-animation begin="step1" attribute="position" from="0 1.25 -5" to="-1 1.25 -5" dur="1000"></a-animation>
+        <a-animation begin="step2" attribute="position" from="-1 1.25 -5" to="0 1.25 -5" dur="1000"></a-animation>
+      </a-sphere>
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+
+      <a-text value="Click the cube" position="-1.4 2.357 -2" scale="2 2 1" text="color:#2c292e;anchor:left"></a-text>
+
+      <a-camera position="0 0 0">
+        <a-cursor geometry="primitive: ring; radiusInner: 0.013; radiusOuter: 0.02" material="color: rgb(50,50,50)"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

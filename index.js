@@ -18,7 +18,6 @@ module.exports = { 'echo_component' : {
   },
 
   echo: function() {
-    // console.log('echo.echo: ', this);
     // if (this.echoTimeout) clearTimeout(this.echoTimeout);
 
     if (this.data.delay > 0.0) {
