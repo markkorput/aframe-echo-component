@@ -70,8 +70,6 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-	'use strict'
-
 	module.exports = { 'echo_component' : {
 	  schema: {
 	    event: { type: 'string' },
