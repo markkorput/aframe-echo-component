@@ -1,6 +1,6 @@
 {
   "name": "aframe-echo-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Event handling component for Aframe.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "events",
     "system"
   ],
-  "author": "Óscar Marín Miró <oscar@outliers.es> @oscarmarinmiro",
+  "author": "Mark van de Korput",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/markkorput/aframe-echo-component/issues"
