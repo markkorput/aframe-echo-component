@@ -9,7 +9,7 @@ module.exports = { 'echo_component' : {
   multiple: true,
 
   init: function() {
-    this.echoCallback = () => this.echo();
+    this.echoCallback = function(){ this.echo() }.bind(this);
   },
 
   update: function(prevdata) {
@@ -18,11 +18,10 @@ module.exports = { 'echo_component' : {
   },
 
   echo: function() {
-    // console.log('echo.echo: ', this);
     // if (this.echoTimeout) clearTimeout(this.echoTimeout);
 
     if (this.data.delay > 0.0) {
-      setTimeout(() => this.emit(), this.data.delay); // schedule delayed execution
+      setTimeout(function(){ this.emit() }.bind(this), this.data.delay); // schedule delayed execution
       return;
     }
 
